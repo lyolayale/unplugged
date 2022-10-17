@@ -86,7 +86,71 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ------------------- Base Header - Footer Styles --------------------------- */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+/* ------------------------ Footer - social media | Nav Styles ----------------------- */
+
+nav ul,
+footer .social-icons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* --------------------- Root index.html-------------------------------------- */
+
+.hero-area,
+.form-description,
+.form,
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column wrap;
+  text-align: left;
+}
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.features h2 {
+  text-align: left;
+}
+
+/* --------------------------- About Pages Styles ------------------------- */
+
+.mission .mission-content,
+.contact-section .contact-content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* ------------------------- FAQ Styles ------------------------------------- */
+
+.fag .faq-content {
+  display: flex;
+  justify-content: left;
+  align-self: center;
+  flex-flow: row wrap;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +324,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
