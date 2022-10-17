@@ -147,6 +147,14 @@ footer .social-icons {
   margin-top: 50px;
 }
 
+.social-icons {
+  gap: 20px;
+}
+
+.copyright {
+  font-size: small;
+}
+
 /* ---------------------------- Generic Styles------------------------------------- */
 
 p {
@@ -361,15 +369,127 @@ input[type="button"] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  /* ------------------------ Tablet:root - Header ----------------------------------*/
+
+  header img {
+    margin-left: 50px;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: right;
+    align-items: center;
+    gap: 25px;
+    margin-right: 50px;
+  }
+
+  /* ---------------------- Table:root - Aside | form desciption---------------------- */
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 50%;
+    margin: auto 50px;
+  }
+
+  .reviews {
+    padding-top: 50px;
+  }
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100%;
+    max-height: 650px;
+    width: 75%;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: auto;
+    width: 50%;
+  }
+
+  .features article p {
+    max-width: 200px;
+  }
+
+  .features h2,
+  .reviews h2 {
+    margin-left: 40px;
+  }
+
+  .reviews {
+    height: 100%;
+    max-height: 400px;
+    margin-top: 100px;
+  }
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+  }
+
+  .reviews .content-wrapper img,
+  .reviews .content-wrapper .reviews-text {
+    width: 50%;
+  }
+
+  .reviews-text {
+    margin-top: -50px;
+  }
+
+  footer {
+    height: 100%;
+    max-height: 300px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-flow: row wrap; */
+  }
+
+  .social {
+    margin-top: 0;
+    gap: 20px;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
 }
 
 /* ==========================================================================
