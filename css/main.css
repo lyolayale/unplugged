@@ -376,7 +376,7 @@ input[type="button"] {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 85%;
+    width: 100%;
     max-width: 750px;
     margin: auto;
   }
@@ -479,7 +479,7 @@ input[type="button"] {
 
   .reviews {
     height: 100%;
-    max-height: 400px;
+    /* max-height: 400px; */
     padding-top: 50px;
   }
 
@@ -498,6 +498,10 @@ input[type="button"] {
 
   .reviews-text {
     margin-top: -50px;
+  }
+
+  .reviews img {
+    width: 575px;
   }
 
   /* ======================== About Page | FAQ Page ============================== */
@@ -547,7 +551,28 @@ input[type="button"] {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+  /* ----------------------------- Desktop ---------------------------- */
+  body {
+    width: 85%;
+    max-width: 1200px;
+  }
+
+  aside {
+    justify-content: center;
+  }
+  .form-description,
+  .form {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
+  .reviews-text {
+    margin-top: -170px;
+  }
 }
 
 /* ==========================================================================
