@@ -86,7 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* --------------------------  Reset ----------------------------------- */
+
 /* ------------------- Base Header - Footer Styles --------------------------- */
+
+header {
+  padding: 15px 0;
+}
 
 header,
 footer {
@@ -97,7 +103,25 @@ footer {
   flex-flow: row wrap;
 }
 
-/* ------------------------ Footer - social media | Nav Styles ----------------------- */
+footer address p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+footer address p {
+  margin: -5px;
+  padding: 0;
+}
+
+.copyright {
+  margin-bottom: -45px;
+  margin-top: 50px;
+}
+
+/* ------------------------ Footer (social media) | Navbar Styles ----------------------- */
+header nav {
+  width: 60%;
+  margin: auto;
+}
 
 nav ul,
 footer .social-icons {
@@ -108,7 +132,41 @@ footer .social-icons {
   list-style-type: none;
 }
 
-/* --------------------- Root index.html-------------------------------------- */
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+.social {
+  margin-top: 50px;
+}
+
+/* ---------------------------- Generic Styles------------------------------------- */
+
+p {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+}
+
+/* ------------------------------ Root index.html-------------------------------------- */
+
+.hero-area h1 {
+  margin-top: 60px;
+}
+
+.content-wrapper,
+.hero-area,
+aside {
+  width: 90%;
+  margin: auto;
+}
+
+.header-divider {
+  width: 100%;
+}
 
 .hero-area,
 .form-description,
@@ -121,6 +179,10 @@ footer .social-icons {
   text-align: left;
 }
 
+input[type="button"] {
+  margin-top: 20px;
+}
+
 .features article {
   display: flex;
   justify-content: center;
@@ -129,8 +191,15 @@ footer .social-icons {
   text-align: center;
 }
 
-.features h2 {
+.features h2,
+.reviews h2 {
+  margin-top: 50px;
   text-align: left;
+}
+
+.features img {
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 /* --------------------------- About Pages Styles ------------------------- */
