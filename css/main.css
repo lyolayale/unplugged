@@ -208,7 +208,10 @@ input[type="button"] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: auto;
   text-align: center;
+  width: 100%;
+  max-width: 200px;
 }
 
 .features h2,
@@ -518,7 +521,9 @@ input[type="button"] {
     width: 85%;
     max-width: 600px;
   }
+
   /* -------------------------- FAQ Page ------------------------------------- */
+
   .faq .content-wrapper,
   .faq-content {
     display: flex;
