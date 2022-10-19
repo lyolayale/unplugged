@@ -94,18 +94,24 @@ header {
   padding: 15px 0;
 }
 
-header,
-footer {
+header .content-wrapper,
+footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-flow: row wrap;
+  text-align: center;
+}
+
+header img {
+  width: 70%;
+  max-width: 250px;
+  margin: auto;
 }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 footer address p:nth-of-type(1) {
@@ -203,6 +209,13 @@ input[type="button"] {
   margin-top: 20px;
 }
 
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .features article {
   display: flex;
   justify-content: center;
@@ -214,10 +227,17 @@ input[type="button"] {
   max-width: 200px;
 }
 
+.reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row wrap;
+}
+
 .features h2,
 .reviews h2 {
   margin-top: 50px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .features img {
@@ -383,10 +403,14 @@ input[type="button"] {
 
   /* ========================== Header - All Pages =========================*/
 
+  header {
+    width: 90%;
+    margin: auto;
+  }
+
   header .content-wrapper {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-flow: nowrap;
     width: 100%;
   }
 
@@ -406,11 +430,16 @@ input[type="button"] {
     max-height: 300px;
   }
 
-  .footer-content {
+  footer .content-wrapper {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* flex-flow: row wrap; */
+    width: 55%;
   }
 
   .social {
@@ -447,19 +476,12 @@ input[type="button"] {
     margin-bottom: -50px;
   }
   .features .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     height: 100%;
     max-height: 650px;
     width: 75%;
   }
 
   .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: column nowrap;
     margin: auto;
     width: 50%;
@@ -470,46 +492,41 @@ input[type="button"] {
     margin: -20px auto;
   }
 
-  .features h2,
-  .reviews h2 {
+  .features h2 {
     margin-left: 40px;
   }
 
   /* --------------------------- Reviews ---------------------------- */
 
   .reviews {
-    height: 100%;
-    /* max-height: 400px; */
-    padding-top: 50px;
+    width: 75%;
+    margin: auto;
   }
-
   .reviews .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
+    width: 100%;
     gap: 10px;
   }
 
-  .reviews .content-wrapper img,
-  .reviews .content-wrapper .reviews-text {
-    width: 50%;
+  .reviews img,
+  .reviews .reviews-text {
+    width: 100%;
+    max-width: 300px;
   }
 
-  .reviews-text {
-    margin-top: -50px;
-  }
-
-  .reviews img {
-    width: 575px;
+  .reviews .reviews-text {
+    margin-top: -20px;
   }
 
   /* ======================== About Page | FAQ Page ============================== */
 
   /* ---------------------------- About Page ---------------------------------- */
 
-  .mission-content p {
-    width: 50%;
+  .mission .content-wrapper {
+    width: 87%;
+  }
+
+  .mission .mission-content {
+    flex-wrap: nowrap;
   }
 
   .mission-content p:nth-of-type(2) {
@@ -517,16 +534,30 @@ input[type="button"] {
   }
 
   .contact-section .contact-content {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
     margin-right: auto;
-    width: 85%;
+    width: 87%;
     max-width: 600px;
   }
 
   /* -------------------------- FAQ Page ------------------------------------- */
+  .fag .faq-content {
+    display: flex;
+    justify-content: left;
+    align-self: center;
+    flex-flow: row wrap;
+  }
+
+  .faq .content-wrapper {
+    margin: auto;
+    width: 90%;
+  }
+
+  .faq h2 {
+    width: 70%;
+    max-width: 250px;
+    line-height: 20px;
+  }
 
   .faq .content-wrapper,
   .faq-content {
@@ -538,12 +569,7 @@ input[type="button"] {
 
   .faq-content .faq-item {
     width: 100%;
-    max-width: 250px;
-  }
-
-  .faq .content-wrapper {
-    margin: auto;
-    width: 90%;
+    max-width: 300px;
   }
 
   .faq h2 {
@@ -559,8 +585,17 @@ input[type="button"] {
     max-width: 1200px;
   }
 
+  header {
+    width: 100%;
+  }
+
+  header img,
+  header nav ul {
+    width: 100%;
+  }
+
   aside {
-    justify-content: center;
+    justify-content: space-between;
   }
   .form-description,
   .form {
@@ -568,18 +603,68 @@ input[type="button"] {
     max-width: 300px;
   }
 
-  .reviews h2 {
-    margin-bottom: 50px;
+  .features h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
   }
 
-  .reviews-text {
-    margin-top: -170px;
+  .features .content-wrapper {
+    width: 75%;
+  }
+
+  .reviews h2 {
+    margin-bottom: 50px;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .reviews .content-wrapper {
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .reviews img {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .reviews .reviews-text {
+    margin-top: -140px;
+    width: 100%;
+    max-width: 375px;
+  }
+
+  /* ---------------------------- About Section ----------------------------- */
+
+  .mission .content-wrapper p {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact-section .content-wrapper {
+    width: 85%;
+  }
+
+  .contact-section .contact-content {
+    max-width: 100%;
+  }
+
+  /* ----------------------------- FAQ Page --------------------------------- */
+
+  .faq .content-wrapper {
+    width: 100%;
+  }
+
+  .faq-content .faq-item {
+    width: 100%;
+    max-width: 450px;
   }
 
   /* ----------------------------- footer Section ---------------------------- */
 
-  .footer-content {
-    justify-content: space-around;
+  footer .footer-content {
+    justify-content: space-between;
   }
 
   footer {
@@ -589,13 +674,6 @@ input[type="button"] {
 
   .copyright {
     margin-top: 60px;
-  }
-
-  /* ----------------------------- FAQ Page --------------------------------- */
-
-  .faq-content .faq-item {
-    width: 100%;
-    max-width: 450px;
   }
 }
 
