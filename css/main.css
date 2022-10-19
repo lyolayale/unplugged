@@ -420,7 +420,7 @@ input[type="button"] {
   /* ========================== Header - All Pages =========================*/
 
   header {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
@@ -616,10 +616,6 @@ input[type="button"] {
   body {
     width: 100%;
     max-width: 1200px;
-  }
-
-  header {
-    width: 90%;
   }
 
   header img,
