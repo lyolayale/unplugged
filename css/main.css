@@ -149,8 +149,13 @@ footer .social-icons {
   list-style-type: none;
 }
 
+.footer .social-icons {
+  justify-content: center;
+}
+
 .social {
-  margin-top: 50px;
+  margin: 50px auto auto auto;
+  width: 50%;
 }
 
 .social-icons {
@@ -158,6 +163,7 @@ footer .social-icons {
 }
 
 .copyright {
+  width: 100%;
   font-size: small;
 }
 
@@ -196,8 +202,7 @@ aside,
 
 .hero-area,
 .form-description,
-.form,
-.reviews {
+.form {
   display: flex;
   justify-content: center;
   align-items: left;
@@ -227,22 +232,27 @@ input[type="button"] {
   max-width: 200px;
 }
 
-.reviews .content-wrapper {
+.features img {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.features h2 {
+  margin-top: 50px;
+}
+
+/* ------------------------------- Review Section ----------------------- */
+
+.reviews h2 {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.reviews.content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: row wrap;
-}
-
-.features h2,
-.reviews h2 {
-  margin-top: 50px;
-  /* text-align: left; */
-}
-
-.features img {
-  margin-top: 60px;
-  margin-bottom: 40px;
 }
 
 .reviews img {
@@ -262,8 +272,7 @@ input[type="button"] {
   width: 100%;
 }
 
-.mission .mission-content,
-.contact-section .contact-content {
+.mission .mission-content {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -278,6 +287,13 @@ input[type="button"] {
 
 .mission-content p:nth-of-type(1) {
   margin-bottom: 20px;
+}
+
+.contact-section .contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
 .contact-info address p {
@@ -428,6 +444,8 @@ input[type="button"] {
   footer {
     height: 100%;
     max-height: 300px;
+    width: 100%;
+    margin: auto;
   }
 
   footer .content-wrapper {
@@ -442,9 +460,19 @@ input[type="button"] {
     width: 55%;
   }
 
+  footer .contact,
+  footer .social {
+    width: 50%;
+  }
+
   .social {
     margin-top: 0;
     gap: 20px;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+    gap: 30px;
   }
 
   /* ========================== Table:root index.html  ===================== */
@@ -499,22 +527,21 @@ input[type="button"] {
   /* --------------------------- Reviews ---------------------------- */
 
   .reviews {
-    width: 75%;
+    width: 85%;
     margin: auto;
   }
+
   .reviews .content-wrapper {
-    width: 100%;
-    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .reviews img,
   .reviews .reviews-text {
     width: 100%;
-    max-width: 300px;
-  }
-
-  .reviews .reviews-text {
-    margin-top: -20px;
+    max-width: 250px;
   }
 
   /* ======================== About Page | FAQ Page ============================== */
@@ -533,11 +560,17 @@ input[type="button"] {
     margin-top: -50px;
   }
 
-  .contact-section .contact-content {
-    justify-content: space-between;
-    margin-right: auto;
+  .contact-section .content-wrapper,
+  .contact-section h2 {
     width: 87%;
-    max-width: 600px;
+    margin: auto;
+  }
+
+  .contact-section .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
 
   /* -------------------------- FAQ Page ------------------------------------- */
@@ -581,12 +614,12 @@ input[type="button"] {
 
 @media only screen and (min-width: 1200px) {
   body {
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
   }
 
   header {
-    width: 100%;
+    width: 90%;
   }
 
   header img,
@@ -642,12 +675,16 @@ input[type="button"] {
     max-width: 500px;
   }
 
-  .contact-section .content-wrapper {
-    width: 85%;
+  .contact-section .content-wrapper,
+  .contact-section h2 {
+    width: 90%;
+    margin: auto;
   }
 
   .contact-section .contact-content {
-    max-width: 100%;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
   }
 
   /* ----------------------------- FAQ Page --------------------------------- */
@@ -662,15 +699,6 @@ input[type="button"] {
   }
 
   /* ----------------------------- footer Section ---------------------------- */
-
-  footer .footer-content {
-    justify-content: space-between;
-  }
-
-  footer {
-    height: 100%;
-    max-height: 300px;
-  }
 
   .copyright {
     margin-top: 60px;
