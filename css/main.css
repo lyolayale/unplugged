@@ -513,6 +513,7 @@ input[type="button"] {
     flex-flow: column nowrap;
     margin: auto;
     width: 50%;
+    max-width: 300px;
   }
 
   .features article p {
@@ -632,14 +633,15 @@ input[type="button"] {
     max-width: 300px;
   }
 
+  .features .content-wrapper {
+    width: 75%;
+    max-width: 900px;
+  }
+
   .features h2 {
     width: 100%;
     margin-bottom: 10px;
     margin-left: auto;
-  }
-
-  .features .content-wrapper {
-    width: 75%;
   }
 
   .reviews h2 {
