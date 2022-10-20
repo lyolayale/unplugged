@@ -93,6 +93,7 @@ html {
 }
 
 body {
+  background-color: #202322;
   color: #e2e3ed;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -145,6 +146,9 @@ figure {
 }
 
 address {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -171,6 +175,12 @@ header img {
   margin: auto;
 }
 
+header img {
+  width: 75%;
+  max-width: 225px;
+  height: 40px;
+}
+
 footer .content-wrapper {
   width: 55%;
   margin: 50px auto;
@@ -178,25 +188,27 @@ footer .content-wrapper {
 
 footer address p:nth-of-type(1) {
   margin-bottom: 20px;
+  height: 33px;
+  font-size: 1.125em;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 footer address p {
-  margin: -10px;
+  margin: -5px;
   padding: 0;
 }
 
 .copyright {
   margin-bottom: -45px;
   margin-top: 50px;
+  height: 19px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 
-/* ------------------------ Footer (social media) | Navbar Styles ----------------------- */
-
-header img {
-  width: 75%;
-  max-width: 225px;
-  height: 40px;
-}
 header nav {
   width: 60%;
   margin: auto;
@@ -222,6 +234,13 @@ footer .social-icons {
 
 .social-icons {
   gap: 20px;
+}
+
+.social-icons i {
+  height: 57px;
+  font-size: 18px;
+  color: #e2e3ed;
+  font-weight: 400;
 }
 
 .copyright {
@@ -267,9 +286,20 @@ aside,
 .form {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-flow: column wrap;
   text-align: left;
+  width: 90%;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+}
+
+aside {
+  background-color: #527158;
+  padding: 1em;
 }
 
 input[type="button"] {
@@ -312,6 +342,15 @@ input[type="button"] {
   margin-top: 50px;
 }
 
+.features p {
+  height: 146px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e2e3ed;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
 /* ------------------------------- Review Section ----------------------- */
 
 .reviews {
@@ -322,14 +361,22 @@ input[type="button"] {
   margin-left: 40px;
 }
 
-.reviews.content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: row wrap;
+.reviews p {
+  height: 146px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e2e3ed;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 
 .reviews img {
+  width: 100%;
+  max-width: 750px;
+  object-fit: cover;
+}
+
+.reviews .reviews-text {
   width: 100%;
 }
 
@@ -392,7 +439,7 @@ input[type="button"] {
 .faq h2 {
   width: 70%;
   max-width: 250px;
-  line-height: 20px;
+  line-height: 24px;
 }
 /* ==========================================================================
    Helper classes
@@ -532,15 +579,16 @@ input[type="button"] {
   }
 
   footer .content-wrapper {
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     width: 100%;
   }
 
   footer .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 55%;
+    flex-flow: row nowrap;
+    width: 50%;
   }
 
   footer .contact,
@@ -567,8 +615,8 @@ input[type="button"] {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
-    margin-top: 20px;
-    width: 100%;
+    max-width: 750px;
+    padding-bottom: 3em;
   }
 
   aside .form-description,
@@ -615,17 +663,30 @@ input[type="button"] {
     margin: 50px auto auto auto;
   }
 
-  .reviews .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
+  .reviews h4 {
+    font-size: 1.5em;
   }
 
-  .reviews img,
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .reviews img {
+    max-width: 300px;
+  }
+
   .reviews .reviews-text {
-    width: 100%;
-    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: text-top;
+    line-height: 24px;
+    max-width: 312px;
+    margin-top: -34px;
   }
 
   /* ======================== About Page | FAQ Page ============================== */
@@ -715,6 +776,7 @@ input[type="button"] {
 
   aside {
     justify-content: space-between;
+    max-width: 87%;
   }
   .form-description,
   .form {
@@ -735,26 +797,28 @@ input[type="button"] {
     margin-bottom: 10px;
   }
 
+  .reviews {
+    width: 87%;
+  }
+
   .reviews h2 {
     margin-bottom: 50px;
-    margin-right: auto;
-    width: 90%;
+    margin-left: 3em;
+    width: 100%;
   }
 
   .reviews .content-wrapper {
-    justify-content: space-between;
-    margin: auto;
+    justify-content: center;
   }
 
-  .reviews img {
-    width: 100%;
-    max-width: 375px;
+  .reviews img,
+  .reviews .reviews-text {
+    max-width: 400px;
   }
 
   .reviews .reviews-text {
-    margin-top: -140px;
-    width: 100%;
-    max-width: 375px;
+    line-height: 24px;
+    margin-bottom: auto;
   }
 
   /* ---------------------------- About Section ----------------------------- */
