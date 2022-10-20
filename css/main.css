@@ -236,11 +236,18 @@ footer .social-icons {
   gap: 20px;
 }
 
-.social-icons i {
-  height: 57px;
-  font-size: 18px;
+i {
+  background-color: #527158;
+  border-radius: 50%;
   color: #e2e3ed;
+  font-size: 18px;
   font-weight: 400;
+  padding: 8px;
+  text-align: center;
+}
+
+#fb {
+  padding: 8px 12px 10px 10px;
 }
 
 .copyright {
@@ -472,6 +479,11 @@ input[type="button"] {
 
 /* ------------------------- FAQ Styles ------------------------------------- */
 
+.faq {
+  background-color: #527158;
+  padding: 2em 2em 5em 3em;
+}
+
 .fag .faq-content {
   display: flex;
   justify-content: left;
@@ -637,7 +649,7 @@ input[type="button"] {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
-    width: 50%;
+    width: 100%;
   }
 
   footer .contact,
@@ -781,6 +793,7 @@ input[type="button"] {
   }
 
   /* -------------------------- FAQ Page ------------------------------------- */
+
   .fag .faq-content {
     display: flex;
     justify-content: left;
@@ -794,9 +807,9 @@ input[type="button"] {
   }
 
   .faq h2 {
-    width: 70%;
-    max-width: 250px;
+    max-width: 100%;
     line-height: 28px;
+    margin-right: auto;
   }
 
   .faq .content-wrapper,
@@ -810,10 +823,6 @@ input[type="button"] {
   .faq-content .faq-item {
     width: 100%;
     max-width: 300px;
-  }
-
-  .faq h2 {
-    max-width: 100%;
   }
 }
 
@@ -913,9 +922,19 @@ input[type="button"] {
     width: 100%;
   }
 
+  .faq .faq-content {
+    justify-content: space-around;
+  }
+
   .faq-content .faq-item {
     width: 100%;
     max-width: 450px;
+  }
+
+  .faq h2 {
+    max-width: 100%;
+    line-height: 28px;
+    margin-left: 50px;
   }
 
   /* ----------------------------- footer Section ---------------------------- */
