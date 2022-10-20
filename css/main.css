@@ -219,6 +219,8 @@ input[type="button"] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  max-width: 360px;
 }
 
 .features article {
