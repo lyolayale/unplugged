@@ -270,7 +270,6 @@ main {
   margin-top: 60px;
 }
 
-aside,
 .features .content-wrapper,
 .reviews .content-wrapper {
   margin: auto;
@@ -299,7 +298,9 @@ input {
 
 aside {
   background-color: #527158;
+  width: 84%;
   padding: 1em;
+  margin: auto;
 }
 
 input[type="button"] {
@@ -615,6 +616,7 @@ input[type="button"] {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
+    width: 86%;
     max-width: 750px;
     padding-bottom: 3em;
   }
@@ -775,8 +777,7 @@ input[type="button"] {
   }
 
   aside {
-    justify-content: space-between;
-    max-width: 87%;
+    min-width: 87.5%;
   }
   .form-description,
   .form {
@@ -798,7 +799,7 @@ input[type="button"] {
   }
 
   .reviews {
-    width: 87%;
+    width: 90%;
   }
 
   .reviews h2 {
