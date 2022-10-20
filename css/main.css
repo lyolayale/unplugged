@@ -86,7 +86,69 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* --------------------------  Reset ----------------------------------- */
+/* --------------------------  General Styles ----------------------------------- */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #e2e3ed;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 0 10em 1em;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+p {
+}
+
+img {
+}
+
+a {
+  color: #e2e3ed;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+figure {
+}
+
+address {
+}
+
+.content-wrapper {
+}
 
 /* ------------------- Base Header - Footer Styles --------------------------- */
 
@@ -211,7 +273,14 @@ aside,
 }
 
 input[type="button"] {
+  color: #e2e3ed;
   margin-top: 20px;
+}
+
+.features h2 {
+  width: 100%;
+  max-width: 318px;
+  margin: auto;
 }
 
 .features .content-wrapper {
@@ -245,8 +314,11 @@ input[type="button"] {
 
 /* ------------------------------- Review Section ----------------------- */
 
-.reviews h2 {
+.reviews {
   margin-top: 50px;
+}
+
+.reviews h2 {
   margin-left: 40px;
 }
 
@@ -419,6 +491,15 @@ input[type="button"] {
     margin: auto;
   }
 
+  h1 {
+    font-size: 3rem;
+    max-width: 640px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
   /* ========================== Header - All Pages =========================*/
 
   header {
@@ -499,20 +580,24 @@ input[type="button"] {
   /* ----------------------- Features --------------------------------- */
 
   .features {
-    margin-top: 50px;
+    margin: auto;
+    width: 75%;
   }
 
   .features h2 {
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
+    max-width: 641px;
+    margin-right: auto;
+    margin-left: 0;
   }
   .features .content-wrapper {
-    height: 100%;
-    max-height: 650px;
-    width: 75%;
+    justify-content: space-between;
+    max-width: 750px;
   }
 
   .features article {
     flex-flow: column nowrap;
+    justify-content: space-between;
     margin: auto;
     width: 50%;
     max-width: 300px;
@@ -523,15 +608,11 @@ input[type="button"] {
     margin: -20px auto;
   }
 
-  .features h2 {
-    margin-left: 40px;
-  }
-
   /* --------------------------- Reviews ---------------------------- */
 
   .reviews {
     width: 85%;
-    margin: auto;
+    margin: 50px auto auto auto;
   }
 
   .reviews .content-wrapper {
@@ -592,7 +673,7 @@ input[type="button"] {
   .faq h2 {
     width: 70%;
     max-width: 250px;
-    line-height: 20px;
+    line-height: 28px;
   }
 
   .faq .content-wrapper,
@@ -621,6 +702,12 @@ input[type="button"] {
     max-width: 1200px;
   }
 
+  h1 {
+    font-size: 3.75em;
+    margin-bottom: 400px;
+    max-width: 715px;
+  }
+
   header img,
   header nav ul {
     width: 100%;
@@ -635,15 +722,17 @@ input[type="button"] {
     max-width: 300px;
   }
 
+  input[type="button"] {
+    font-size: 1.5em;
+  }
+
   .features .content-wrapper {
-    width: 75%;
     max-width: 900px;
   }
 
   .features h2 {
     width: 100%;
     margin-bottom: 10px;
-    margin-left: auto;
   }
 
   .reviews h2 {
