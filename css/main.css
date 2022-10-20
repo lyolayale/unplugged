@@ -292,6 +292,8 @@ main {
   margin: auto;
 }
 
+/* ------------------------------ Form Section ------------------------------- */
+
 input {
   width: 100%;
 }
@@ -308,10 +310,43 @@ input[type="button"] {
   margin-top: 20px;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ---------------------------- Features Section ------------------------------- */
+
+.features {
+  background: url("../assets/img/features-bg.png") no-repeat center center/cover;
+}
+
 .features h2 {
   width: 100%;
   max-width: 318px;
   margin: auto;
+  padding-top: 2em;
 }
 
 .features .content-wrapper {
@@ -355,7 +390,9 @@ input[type="button"] {
 /* ------------------------------- Review Section ----------------------- */
 
 .reviews {
-  margin-top: 50px;
+  background-color: #2a423a;
+  margin-top: -16px;
+  padding-top: 1em;
 }
 
 .reviews h2 {
@@ -552,6 +589,7 @@ input[type="button"] {
 
   header {
     width: 100%;
+    max-width: 600px;
     margin: auto;
   }
 
@@ -607,7 +645,7 @@ input[type="button"] {
     gap: 30px;
   }
 
-  /* ========================== Table:root index.html  ===================== */
+  /* ========================== Tablet:root index.html  ===================== */
 
   /* ---------------------- Aside | form desciption---------------------- */
 
@@ -631,14 +669,15 @@ input[type="button"] {
 
   .features {
     margin: auto;
-    width: 75%;
+    padding-top: 2em;
+    padding-bottom: 2rem;
+    width: 90%;
   }
 
   .features h2 {
-    /* margin-bottom: -50px; */
     max-width: 641px;
-    margin-right: auto;
-    margin-left: 0;
+    margin-left: 1em;
+    padding-top: 0;
   }
   .features .content-wrapper {
     justify-content: space-between;
@@ -662,7 +701,8 @@ input[type="button"] {
 
   .reviews {
     width: 85%;
-    margin: 50px auto auto auto;
+    margin: auto;
+    padding-bottom: 7em;
   }
 
   .reviews h4 {
@@ -771,6 +811,10 @@ input[type="button"] {
     max-width: 715px;
   }
 
+  header {
+    max-width: 900px;
+  }
+
   header img,
   header nav ul {
     width: 100%;
@@ -796,6 +840,7 @@ input[type="button"] {
   .features h2 {
     width: 100%;
     margin-bottom: 10px;
+    margin-left: 7rem;
   }
 
   .reviews {
