@@ -420,6 +420,11 @@ input[type="button"] {
 
 /* --------------------------- About Pages Styles ------------------------- */
 
+.mission {
+  background-color: #527158;
+  padding: 1em 1em 3em 1em;
+}
+
 .mission,
 .map,
 .contact-section {
@@ -446,6 +451,11 @@ input[type="button"] {
 
 .mission-content p:nth-of-type(1) {
   margin-bottom: 20px;
+}
+
+.contact-section {
+  background-color: #527158;
+  padding: 5em;
 }
 
 .contact-section .contact-wrapper {
@@ -740,24 +750,34 @@ input[type="button"] {
   }
 
   .mission .mission-content {
-    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
   }
 
-  .mission-content p:nth-of-type(2) {
-    margin-top: -50px;
+  .mission p {
+    width: 50%;
+    max-width: 300px;
   }
 
   .contact-section .content-wrapper,
   .contact-section h2 {
-    width: 87%;
+    width: 100%;
+    max-width: 650px;
     margin: auto;
   }
 
   .contact-section .contact-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
+  }
+
+  .contact-section .contact-info {
+    width: 100%;
+    max-width: 250px;
   }
 
   /* -------------------------- FAQ Page ------------------------------------- */
@@ -870,20 +890,21 @@ input[type="button"] {
   /* ---------------------------- About Section ----------------------------- */
 
   .mission .content-wrapper p {
-    width: 100%;
     max-width: 500px;
   }
 
   .contact-section .content-wrapper,
   .contact-section h2 {
-    width: 90%;
-    margin: auto;
+    max-width: 1000px;
   }
 
   .contact-section .contact-content {
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-right: auto;
   }
 
   /* ----------------------------- FAQ Page --------------------------------- */
