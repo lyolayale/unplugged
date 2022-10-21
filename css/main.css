@@ -133,7 +133,12 @@ h4 {
 p {
 }
 
+img:not(article img) {
+  width: 100%;
+}
+
 img {
+  object-fit: cover;
 }
 
 a {
