@@ -236,19 +236,29 @@ footer .social-icons {
   gap: 20px;
 }
 
-i {
+.social-icons p {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
   background-color: #527158;
-  border-radius: 50%;
-  color: #e2e3ed;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 8px;
-  text-align: center;
+  /* margin: 5px auto; */
+  /* text-align: center; */
+  /* margin-top: 5px; */
 }
 
-#fb {
-  padding: 8px 12px 10px 10px;
+i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  color: #e2e3ed;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px auto;
 }
+
+/* #fb {
+  padding: 8px 12px 10px 10px;
+} */
 
 .copyright {
   width: 100%;
