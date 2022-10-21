@@ -157,9 +157,6 @@ address {
   font-style: normal;
 }
 
-.content-wrapper {
-}
-
 /* ------------------- Base Header - Footer Styles --------------------------- */
 
 header {
@@ -383,8 +380,8 @@ input[type="button"] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 16px;
-  margin: auto;
+  /* gap: 16px; */
+  /* margin: auto; */
   text-align: center;
   width: 100%;
   max-width: 200px;
@@ -406,6 +403,12 @@ input[type="button"] {
   color: #e2e3ed;
   font-weight: 400;
   font-family: "Open Sans";
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  margin-right: 24px;
 }
 
 /* ------------------------------- Review Section ----------------------- */
