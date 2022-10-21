@@ -462,8 +462,7 @@ input[type="button"] {
   margin-bottom: 20px;
 }
 
-.mission,
-.map {
+.mission {
   margin-top: 50px;
 }
 
@@ -823,6 +822,10 @@ input[type="button"] {
   .mission p {
     width: 50%;
     max-width: 300px;
+  }
+
+  .map figure {
+    padding-bottom: 60%;
   }
 
   .contact-section .content-wrapper,
