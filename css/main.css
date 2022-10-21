@@ -237,28 +237,25 @@ footer .social-icons {
 }
 
 .social-icons p {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #527158;
-  /* margin: 5px auto; */
-  /* text-align: center; */
-  /* margin-top: 5px; */
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 i {
-  width: 24px;
-  height: 24px;
-  font-size: 18px;
   color: #e2e3ed;
+  font-size: 18px;
   font-weight: 400;
+  height: 24px;
+  width: 24px;
+  margin-top: 5px;
   text-align: center;
-  margin: 10px auto;
+  padding: 1em;
 }
-
-/* #fb {
-  padding: 8px 12px 10px 10px;
-} */
 
 .copyright {
   width: 100%;
@@ -675,6 +672,22 @@ input[type="button"] {
   footer .social-icons {
     justify-content: center;
     gap: 30px;
+  }
+
+  .social-icons p {
+    background-color: #527158;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  i {
+    color: #e2e3ed;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    width: 24px;
+    text-align: center;
   }
 
   /* ========================== Tablet:root index.html  ===================== */
